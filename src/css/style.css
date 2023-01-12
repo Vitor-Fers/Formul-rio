@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, #DC669A, #6F7FDF);
+}
+
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+
+
+.text-container{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(248, 246, 246);
+    box-sizing: border-box;
+    
+    
+}
+
+.text-left{
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    
+    margin-left: 13rem;
+}
+
+.text-left h1{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    /* margin-left: 10rem; */
+}
+
+.text-left p{
+    /* margin-left: 10rem; */
+    font-weight: 400;
+    font-size: 1.5rem;
+    width: 50rem;
+    height: 5rem;
+    flex-wrap: wrap;
+    text-align: justify;
+    
+}
+
+.singUP-container{
+width: 50vw;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.form-area{
+    margin-right: 25%;
+}
+
+/* parte que não precisa alterar */
+.inputs-container{
+    padding: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    box-shadow: 10px 10px 14px #00000056;
+}
+
+.inputs-container input{
+    margin-bottom: 2rem;
+    border: solid 2px;
+    border-radius: 3px;
+    padding: 0.7rem;
+}
+
+.inputs-container textarea{
+    border: solid 2px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 1.3rem;
+}
+
+
+
+.submit{
+    background-color: #3CCC87;
+    padding: 0.6rem;
+    border: none;
+    color: white;
+}
+
+@media (max-width: 768px){
+    .main-container{
+        display: block;
+    }
+
+    .text-container{
+        display: none;
+    }
+
+    .singUP-container{
+        margin: 0 auto 0 33%;
+    }
+}
